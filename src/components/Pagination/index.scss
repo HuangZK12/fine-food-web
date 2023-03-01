@@ -1,0 +1,142 @@
+// 正常大小样式
+.zy-pagination-container-normal {
+  height: 64px;
+  background-color: #FBFBFB;
+  text-align: right;
+
+  .el-pagination .btn-prev,
+  .el-pagination .btn-next,
+  .el-pager li {
+    padding: 0;
+  }
+
+  .number,
+  .more,
+  .el-pagination,
+  .btn-prev,
+  .el-pagination__total,
+  .el-pagination__jump,
+  .el-pagination__sizes,
+  .el-input__inner,
+  .el-input,
+  .btn-next {
+    height: 32px !important;
+    line-height: 32px !important;
+  }
+
+  .el-pager li,
+  .el-input__inner,
+  .el-pagination.is-background .btn-prev,
+  .el-pagination.is-background .btn-next {
+    border: 1px solid #d9d9d9 !important;
+  }
+
+  .el-pagination span,
+  .el-pagination button,
+  .el-input__inner,
+  .el-pager li,
+  .el-select .el-input .el-select__caret,
+  .el-pagination {
+    font-size: 14px !important;
+  }
+
+  .number,
+  .btn-prev,
+  .btn-next {
+    border: 1px solid $border;
+    width: 32px;
+  }
+
+  .el-pagination__jump {
+    margin-left: 2px;
+  }
+
+  .el-pager li {
+    font-weight: normal;
+  }
+
+  .el-pagination.is-background .el-pager li:not(.disabled).active {
+    background: $blue;
+    border-color: $blue !important;
+  }
+  .el-pager li.active + li {
+    border: 1px solid #d9d9d9 !important;
+  }
+}
+
+// 小号样式
+.zy-pagination-container-small {
+  height: 56px;
+  text-align: right;
+
+  .el-pagination .btn-prev,
+  .el-pagination .btn-next,
+  .el-pager li {
+    padding: 0;
+  }
+
+  .number,
+  .more,
+  .el-pagination,
+  .btn-prev,
+  .el-pagination__total,
+  .el-pagination__jump,
+  .el-pagination__sizes,
+  .el-input__inner,
+  .el-input,
+  .btn-next {
+    height: 24px !important;
+    line-height: 24px !important;
+  }
+
+  .el-pager .more::before {
+    line-height: 24px !important;
+  }
+
+  .el-pager li,
+  .el-input__inner,
+  .el-pagination.is-background .btn-prev,
+  .el-pagination.is-background .btn-next {
+    border: 1px solid #d9d9d9;
+  }
+
+  .el-pagination span,
+  .el-pagination button,
+  .el-input__inner,
+  .el-pager li,
+  .el-select .el-input .el-select__caret,
+  .el-pagination {
+    font-size: 12px !important;
+  }
+
+  .number,
+  .btn-prev,
+  .btn-next {
+    border: 1px solid $border;
+    width: 24px;
+  }
+
+  .el-pagination__jump {
+    margin-left: 2px;
+  }
+
+  .el-pager li {
+    font-weight: normal;
+  }
+
+  .el-pagination.is-background .el-pager li:not(.disabled).active {
+    background: $blue;
+    border-color: $blue;
+  }
+
+  .el-pagination .el-select .el-input {
+    width: 90px;
+  }
+
+  .el-pagination .el-input__suffix {
+    top: 2px;
+  }
+  .el-pager li.active + li {
+    border: 1px solid #d9d9d9 !important;
+  }
+}

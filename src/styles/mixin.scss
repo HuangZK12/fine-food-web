@@ -1,0 +1,44 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin scrollBar {
+  &::-webkit-scrollbar-track-piece {
+    background: #d3dce6;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #99a9bf;
+    border-radius: 20px;
+  }
+}
+
+@mixin relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+$themColor: #000;
+.container {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background: #fff;
+  padding: 20px;
+  overflow-y: scroll;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: -1px -1px 5px rgba($color: #000, $alpha: 0.1);
+}
+.button_bar {
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
