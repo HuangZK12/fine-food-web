@@ -1,25 +1,73 @@
 <template>
-  <div class="app-container">
-    <!-- <el-carousel indicator-position="outside" height="600px">
-      <el-carousel-item  v-for="(item, index) in url" style="height: 600px;" :key="index">
-        <img :src="item" class="image" alt="">
-      </el-carousel-item>
-    </el-carousel>
-    <Block /> -->
+  <el-carousel height="100vh" indicator-position="none" arrow="never" :pause-on-hover="false">
+    <el-carousel-item v-for="(item, index) in banners" :key="index">
+      <img class="banner" :src="item" alt="">
+    </el-carousel-item>
+  </el-carousel>
+  <div class="mask">
+    <div class="mask_text">
+      <h1>欢迎您!</h1>
+      <h1>这里将是你的味蕾享受!</h1>
+      <p>本网站将打造出你对美食的全新认知</p>
+      <p>一个味道将让你知道一种美食</p>
+    </div>
+    <el-button type="primary" size="default" @click="letGo" class="button">进入网站</el-button>
+
   </div>
 </template>
 <script setup>
-import Block from './Block.vue';
-const url = ['https://img-qn-3.51miz.com/preview/photo/00/01/58/93/P-1589346-EFD7FE1CO.jpg!/quality/90/unsharp/true/compress/true/format/webp/fh/320',
-  'https://img-qn-0.51miz.com/preview/photo/00/01/58/10/P-1581058-3FE6BBAA.jpg!/quality/90/unsharp/true/compress/true/format/webp/fh/320',
-  'https://img-qn-5.51miz.com/preview/photo/00/01/58/38/P-1583817-E251927E.jpg!/quality/90/unsharp/true/compress/true/format/webp/fh/320',
-  'https://img-qn-1.51miz.com/preview/photo/00/01/58/70/P-1587060-C01C5645O.jpg!/quality/90/unsharp/true/compress/true/format/webp/fh/320'
+import {  useRouter } from 'vue-router';
+
+const banners = [
+  require('@/assets/images/banner1.jpg'),
+  require('@/assets/images/banner2.jpg'),
+  require('@/assets/images/banner3.jpg'),
+  require('@/assets/images/banner4.jpg'),
 ]
+const router = useRouter()
+function letGo() {
+  router.push('/home')
+}
 </script>
-<style>
-img {
+<style lang="scss" scoped>
+.banner {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .mask_text {
+    color: #FFF;
+
+    h1 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 12px;
+      font-weight: 200;
+      line-height: 5px
+    }
+  }
+
+  .button {
+    width: 200px;
+    position: absolute;
+    bottom: 20vh;
+    margin-top: 20px;
+  }
 }
 </style>

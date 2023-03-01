@@ -5,7 +5,7 @@ function resolve(dir) {
   return path.join(__dirname, dir);
 }
 
-const name = "美食"; // page title
+const name = "美食博客"; // page title
 
 // If your port is set to 80,
 // use administrator privileges to execute the command line.

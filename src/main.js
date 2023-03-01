@@ -5,12 +5,12 @@ import store from './store'
 import ElementPlus from 'element-plus'
 import '@/styles/index.scss'
 import './styles/element/index.scss'
+import './theme/index.css'
 import 'element-plus/dist/index.css'
 // import '@/router/permission'
 import SvgIcon from '@/components/SvgIcon'
 // main.js
 import { Expand, ChatRound, ArrowDown, CaretBottom, Close, RefreshLeft } from '@element-plus/icons-vue'
-import './theme/index.css'
 import '@/icons'// svg component
 window.onerror = function (message, source, lineno, colno, error) {
   console.log(message, source, lineno, colno, error)

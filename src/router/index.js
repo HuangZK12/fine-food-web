@@ -2,11 +2,11 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import Layout from "@/layout";
 export const slideBar = [
   {
-    path: "baozhan",
-    name: "baozhan",
+    path: "/home",
+    name: "/home",
     component: () =>
-      import(/* webpackChunkName: "dashboard" */ "../views/Bill/Bill.vue"),
-    meta: { title: "报账", icon: "dashboard" },
+      import(/* webpackChunkName: "dashboard" */ "../views/Home/Home.vue"),
+    meta: { title: "首页", icon: "home" },
   },
   {
     path: "menu",

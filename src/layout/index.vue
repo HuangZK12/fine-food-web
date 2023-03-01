@@ -6,6 +6,7 @@
       @click="handleClickOutside"
     />
     <sidebar class="sidebar-container" /> -->
+    <MenuBar/>
     <div class="main-container">
       <div :class="{ 'fixed-header': fixedHeader }">
         <navbar />
@@ -21,14 +22,16 @@ import { Navbar, Sidebar, AppMain, TagsView } from './components'
 import ResizeMixin from './mixin/ResizeHandler'
 import { computed } from 'vue'
 import { useStore } from 'vuex'
+import MenuBar from './components/MenuBar/MenuBar.vue'
 export default {
   name: 'Layout',
   components: {
     Navbar,
     Sidebar,
     AppMain,
-    TagsView
-  },
+    TagsView,
+    MenuBar
+},
   mixins: [ResizeMixin],
   setup () {
     const store = useStore()
