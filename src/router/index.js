@@ -9,11 +9,11 @@ export const slideBar = [
     meta: { title: "首页", icon: "home" },
   },
   {
-    path: "menu",
-    name: "menu",
+    path: "Article",
+    name: "Article",
     component: () =>
-      import(/* webpackChunkName: "dashboard" */ "../views/Menu/Menu.vue"),
-    meta: { title: "菜单管理", icon: "dashboard" },
+      import(/* webpackChunkName: "dashboard" */ "../views/Article/Article.vue"),
+    meta: { title: "文章", icon: "Article" },
   },
   {
     path: "User",
@@ -30,13 +30,13 @@ export const slideBar = [
     meta: { title: "系统管理", icon: "dashboard" },
   },
   {
-    path: "Message",
-    name: "Message",
+    path: "HomePage",
+    name: "HomePage",
     component: () =>
       import(
-        /* webpackChunkName: "dashboard" */ "../views/Message/Message.vue"
+        /* webpackChunkName: "dashboard" */ "../views/HomePage/HomePage.vue"
       ),
-    meta: { title: "留言管理", icon: "dashboard" },
+    meta: { title: "博主页", icon: "dashboard" },
   },
   {
     path: "MessageWall",
