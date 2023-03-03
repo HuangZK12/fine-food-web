@@ -1,10 +1,16 @@
 @forward 'element-plus/theme-chalk/src/common/var.scss' with (
-  $colors: (
-   'primary': (
-      'base': #F20f20,
-    ),
-  ),
+	$colors: (
+		'primary': (
+			'base': #e61f20,
+		),
+		'success': (
+			'base': #86bb2a,
+		),
+		'danger': (
+			'base': #e61f20,
+		),
+	)
 );
-:root {
-  --color-primary: #909399 !important;  // 修改主题变量
-}
+// 如果只是按需导入，则可以忽略以下内容。
+// 如果你想导入所有样式:
+@use 'element-plus/theme-chalk/src/index.scss' as *;

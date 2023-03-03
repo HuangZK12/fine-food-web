@@ -23,11 +23,11 @@ export const slideBar = [
     meta: { title: "账号管理", icon: "dashboard" },
   },
   {
-    path: "setting",
-    name: "setting",
+    path: "Administrators",
+    name: "Administrators",
     component: () =>
-      import(/* webpackChunkName: "dashboard" */ "../views/System/System.vue"),
-    meta: { title: "系统管理", icon: "dashboard" },
+      import(/* webpackChunkName: "dashboard" */ "../views/Administrators/Administrators.vue"),
+    meta: { title: "管理员页", icon: "dashboard" },
   },
   {
     path: "HomePage",
@@ -39,14 +39,24 @@ export const slideBar = [
     meta: { title: "博主页", icon: "dashboard" },
   },
   {
-    path: "MessageWall",
-    name: "MessageWall",
+    path: "Detail",
+    name: "Detail",
     component: () =>
       import(
-        /* webpackChunkName: "dashboard" */ "../views/MessageWall/MessageWall.vue"
+        /* webpackChunkName: "dashboard" */ "../views/Detail/Detail.vue"
       ),
-    meta: { title: "留言墙", icon: "dashboard" },
+    meta: { title: "文章详情", icon: "dashboard" },
   },
+  {
+    path: "MoreArticle",
+    name: "MoreArticle",
+    component: () =>
+      import(
+        /* webpackChunkName: "dashboard" */ "../views/MoreArticle/MoreArticle.vue"
+      ),
+    meta: { title: "更多文章", icon: "dashboard" },
+  },
+  
 ];
 export const constantRoutes = [
   {

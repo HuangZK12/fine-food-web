@@ -6,8 +6,9 @@
     </div>
     <el-menu :default-active="activeIndex" class="menu" mode="horizontal" @select="handleSelect">
       <el-menu-item index="1">首页</el-menu-item>
-      <el-menu-item index="2">美食</el-menu-item>
-      <el-menu-item index="3">关于</el-menu-item>
+      <el-menu-item index="2">更多文章</el-menu-item>
+      <el-menu-item index="2">发布文章</el-menu-item>
+      <el-menu-item index="2">我的</el-menu-item>
     </el-menu>
   </div>
 </template>

@@ -122,6 +122,8 @@ $cursor: rgb(0, 0, 0);
 
 /* reset element-ui css */
 .login-container {
+  background: url('~@/assets/images/banner2.jpg') no-repeat;
+  background-size: cover;
   .el-input {
     display: inline-block;
     height: 47px;
@@ -174,7 +176,8 @@ $light_gray: rgba(238, 238, 238, 0.63);
     padding: 45px 35px 60px 35px;
     border-radius: 10px;
     margin: 0 auto;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255,.6);
+    backdrop-filter: blur(10px);
     overflow: hidden;
   }
 

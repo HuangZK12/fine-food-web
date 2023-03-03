@@ -9,9 +9,7 @@
       <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
           <div class="user-name">{{ username }}</div>
-          <el-icon class="el-icon-caret-bottom ">
-            <arrow-down />
-          </el-icon>
+          <el-icon><ArrowDown /></el-icon>
         </div>
         <template v-slot:dropdown>
           <el-dropdown-menu class="user-dropdown">

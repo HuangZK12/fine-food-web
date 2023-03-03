@@ -13,8 +13,8 @@
         @contextmenu.prevent="openMenu(tag, $event)"
       >
         {{ tag.title }}
-        <el-icon class="el-icon-close" @click.prevent.stop="closeSelectedTag(tag)">
-          <close />
+        <el-icon  @click.prevent.stop="closeSelectedTag(tag)">
+          <Close class="el-icon-close" />
         </el-icon>
       </router-link>
     </scroll-pane>

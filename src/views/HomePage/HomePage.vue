@@ -26,11 +26,12 @@
 </script>
 
 <style lang="scss" scoped>
-  .user_title {
-    padding: 1px 20px;
-    border-bottom: 6px solid $themColor;
-    margin-bottom: 20px;
-  }
+.user_title {
+  padding: 1px 20px;
+  border-bottom: 6px solid $themColor;
+  margin-bottom: 20px;
+}
+
 .content {
   display: flex;
   height: 100%;
@@ -67,9 +68,11 @@
       width: 100%;
       padding: 20px 10px;
       transition: .25s;
+      cursor: pointer;
+
       &:hover {
         transform: scale(1.01);
-        box-shadow: 1px 1px 10px 0 rgba($themColor,.5);
+        box-shadow: 1px 1px 10px 0 rgba($themColor, .5);
       }
 
       img {
